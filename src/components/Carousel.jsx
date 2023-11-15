@@ -40,8 +40,9 @@ const Carousel = () => {
 
                 {cards.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <Card name={card.name}  img={card.img} description={card.description}
-                          />
+                        <Link to={`/owasp/owasp${index+1}`}> <Card name={card.name}  img={card.img} description={card.description}
+                          /></Link>
+                       
                     
                     </SwiperSlide>))}
                 
